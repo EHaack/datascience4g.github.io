@@ -28,7 +28,7 @@ ads: false
 author: '<a href="http://datascience4g.github.io">DataScience4G</a>'
 author_plain: 'DataScience4G'
 
-categories: ["apps", "blog"]
+categories: ["apps", "posts"]
 
 gems:
   - jekyll-feed

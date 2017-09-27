@@ -2,7 +2,7 @@
 title: "The first post for DataScience4G"
 layout: default
 published: true
-category: blog
+category: posts
 tags: [info]
 ---
 
