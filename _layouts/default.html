@@ -23,8 +23,6 @@
 <!-- content starts here -->
             {{ content }}
 <!-- content ends here -->
-<!-- pager includes older/newer posts and social buttons -->
-            {% if page.category != null %}
             {% if page.disqus %}{% include _comments.html %}{% endif %}
         </div>
     </div>
