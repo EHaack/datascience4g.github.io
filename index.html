@@ -22,17 +22,42 @@ layout: plain
   <div class="container">
 
     <div class="row">
-      <div class="col-lg-4 col-sm-6">
+      <div class="col-lg-4 col-md-4 col-sm-6">
         <h3><i class="fa fa-code"></i> The Power of R</h3>
         <p>We use the R language to construct data analytics pipelines and insightful visualizations.</p>
       </div>
-      <div class="col-lg-4 col-sm-6">
+      <div class="col-lg-4 col-md-4 col-sm-6">
         <h3><i class="fa fa-map-marker"></i> Spatial Analytics</h3>
         <p>We rely on the latest technologies to deliver statistical services.</p>
       </div>
-      <div class="col-lg-4 col-sm-6">
+      <div class="col-lg-4 col-md-4 col-sm-6">
         <h3><i class="fa fa-cogs"></i> Interactive Apps</h3>
         <p>We use Shiny and OpenCPU to build web applications.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section-tout">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <hr/>
+        <h2>Apps</h2>
+        {% for app in site.categories.apps %}
+        <h4><a href="{{ site.baseurl }}{{ app.url }}">{{ app.title }}</a></h4>
+        <p>{{ app.excerpt }}</p>
+        {% endfor %}
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <hr/>
+        <h2>Posts</h2>
+        {% for post in site.categories.posts %}
+        <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+        <p>{{ post.excerpt }}</p>
+        {% endfor %}
       </div>
     </div>
 
