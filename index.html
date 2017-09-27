@@ -48,7 +48,6 @@ layout: plain
         <h2>Apps</h2>
         {% for app in site.categories.apps %}
         <h4><a href="{{ site.baseurl }}{{ app.url }}">{{ app.title }}</a></h4>
-        <p>{{ app.excerpt }}</p>
         {% endfor %}
       </div>
       <div class="col-lg-6 col-md-6 col-sm-6">
@@ -56,7 +55,6 @@ layout: plain
         <h2>Posts</h2>
         {% for post in site.categories.posts %}
         <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
-        <p>{{ post.excerpt }}</p>
         {% endfor %}
       </div>
     </div>
