@@ -7,11 +7,11 @@ layout: plain
 
     <div class="row">
       <div class="col-lg-12">
-        <h2 class="text-center">{{ site.description }}</h2>
         <h2> </h2>
         <center>
           <img src="{{ site.baseurl }}/images/ga-w600.png" alt="Rated G" width="33%">
         </center>
+        <h2 class="text-center">we bring the power of data science to general audiences</h2>
       </div>
     </div>
 
@@ -22,42 +22,19 @@ layout: plain
   <div class="container">
 
     <div class="row">
-
-      <!--
-      recent posts, starting with promoted
-      (2 cols have different counters: see limit and offset)
-      -->
-      <div class="col-lg-6 col-sm-6">
-        {% for post in site.posts %}
-        {% if post.promote %}
-        <div class="well">
-          <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
-          {{ post.excerpt }}
-        </div>
-        {% endif %}
-        {% endfor %}
-        {% for post in site.posts limit:3 %}
-        {% unless post.promote %}
-        <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
-        {{ post.excerpt }}
-        {% endunless %}
-        {% endfor %}
+      <div class="col-lg-4 col-sm-6">
+        <h3><i class="fa fa-code"></i> The Power of R</h3>
+        <p>We use the R language to construct data analytics pipelines and insightful visualizations.</p>
       </div>
-
-      <div class="col-lg-6 col-sm-6">
-        {% for post in site.posts offset:3 limit:4 %}
-        {% unless post.promote %}
-        <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
-        {{ post.excerpt }}
-        {% endunless %}
-        {% endfor %}
+      <div class="col-lg-4 col-sm-6">
+        <h3><i class="fa fa-map-marker"></i> Spatial Analytics</h3>
+        <p>We rely on the latest technologies to deliver statistical services.</p>
       </div>
-
+      <div class="col-lg-4 col-sm-6">
+        <h3><i class="fa fa-cogs"></i> Interactive Apps</h3>
+        <p>We use Shiny and OpenCPU to build web applications.</p>
+      </div>
     </div>
-    <div class="row">
-
-    </div>
-
 
   </div>
 </div>
