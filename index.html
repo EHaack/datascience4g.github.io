@@ -46,7 +46,7 @@ layout: plain
         <hr/>
         <h2>Apps</h2>
         {% for app in site.posts %}
-        {% if post.category == 'apps' %}
+        {% if app.category == 'apps' %}
         <div class="col-lg-4 col-md-4 col-sm-6">
           <div class="image">
             <a href="{{ site.baseurl }}{{ app.url }}"><img src="{{ site.baseurl }}/images/apps/{{ app.id }}/thumb.png" class="img-responsive" alt="{{ app.id }}"></a>
