@@ -25,7 +25,25 @@
     h1, h2, h3, h4, h5, h6 {
         {% if site.fancyfonts == true %}font-family: 'Asap Condensed', sans-serif;{% endif %}
     }
+    .modal-body {
+        position: relative;
+        overflow-y: auto;
+        max-height: 400px;
+        padding: 15px;
+    }
+    .autoModal.modal .modal-body{
+        max-height: 100%;
+    }
 </style>
+<script>
+  $('#modal').on('show.bs.modal', function () {
+         $(this).find('.modal-body').css({
+                width:'auto', //probably not needed
+                height:'auto', //probably not needed
+                'max-height':'100%'
+         });
+  });
+</script>
 <!-- IE -->
 <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico" />
 <!-- other browsers -->
