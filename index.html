@@ -7,7 +7,7 @@ layout: plain
 
     <div class="row">
       <div class="col-lg-6 col-md-6 col-sm-6">
-        <h3 class="text-center">We bring the power of data science to general audiences</h3>
+        <h2 class="text-center">We bring the power of data science to general audiences</h2>
       </div>
       <div class="col-lg-6 col-md-6 col-sm-6">
         <img src="{{ site.baseurl }}/images/ga-w600.png" alt="Rated G" width="80%">
@@ -46,7 +46,12 @@ layout: plain
         <hr/>
         <h2>Apps</h2>
         {% for app in site.categories.apps %}
-        <h4><a href="{{ site.baseurl }}{{ app.url }}">{{ app.title }}</a></h4>
+        <div class="col-lg-8 col-md-8 col-sm-6">
+          <div class="image">
+            <a href="{{ site.baseurl }}{{ app.url }}"><img src="{{ site.baseurl }}/images/apps/{{ app.id }}/thumb.png" class="img-responsive" alt="{{ app.id }}"></a>
+          </div>
+          <h4><a href="{{ site.baseurl }}{{ app.url }}">{{ app.title }}</a></h4>
+        </div>
         {% endfor %}
       </div>
       <div class="col-lg-4 col-md-4 col-sm-6">
