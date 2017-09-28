@@ -2,70 +2,6 @@
 layout: plain
 ---
 
-<div class="jumbotron">
-  <div class="container">
-
-    <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-6">
-        <h2 class="text-center">We bring the power of data science to general audiences</h2>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-6">
-        <img src="{{ site.baseurl }}/images/ga-w600.png" alt="Rated G" width="80%">
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div class="section-tout">
-  <div class="container">
-
-    <div class="row">
-      <div class="col-lg-4 col-md-4 col-sm-6">
-        <h3><i class="fa fa-code"></i> The Power of R</h3>
-        <p>We use the R language to construct data analytics pipelines and insightful visualizations.</p>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-6">
-        <h3><i class="fa fa-map-marker"></i> Spatial Analytics</h3>
-        <p>We rely on the latest technologies to deliver statistical services.</p>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-6">
-        <h3><i class="fa fa-cogs"></i> Interactive Apps</h3>
-        <p>We use Shiny and OpenCPU to build web applications.</p>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div class="section-tout">
-  <div class="container">
-
-    <div class="row">
-      <div class="col-lg-8 col-md-8 col-sm-6">
-        <hr/>
-        <h2>Apps</h2>
-        {% for app in site.categories.apps %}
-        <div class="col-lg-4 col-md-4 col-sm-6">
-          <div class="image">
-            <a href="{{ site.baseurl }}{{ app.url }}"><img src="{{ site.baseurl }}/images/apps/{{ app.short }}/thumb.png" class="img-responsive" alt="{{ app.short }}"></a>
-          </div>
-          <h4><a href="{{ site.baseurl }}{{ app.url }}">{{ app.title }}</a></h4>
-        </div>
-        {% endfor %}
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-6">
-        <hr/>
-        <h2>Posts</h2>
-        {% for post in site.categories.posts %}
-        <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
-        {% endfor %}
-      </div>
-    </div>
-
-  </div>
-</div>
-
 <style type="text/css">
   .jumbotron {
     margin-top: 0;
@@ -155,15 +91,15 @@ $(document).on("slide.bs.carousel", "#widget-carousel", function(e) {
 
       <div class="col-lg-6 col-md-6 col-sm-6 benefits">
         <div class="hidden-xs">&nbsp;</div>
-        <h4>Bring the best of JavaScript data visualization to R</h4>
+        <h4>Bring the power of data science to general audiences</h4>
         <ul>
-          <li>Use JavaScript visualization libraries <strong>at the R console</strong>, just like plots</li>
-          <li>Embed widgets in <strong>R Markdown</strong> documents and <strong>Shiny</strong> web applications</li>
-          <li><strong>Develop new widgets</strong> using a framework that seamlessly bridges R and JavaScript</li>
+          <li>Use the R language interactive visualizations</li>
+          <li>Build on the latest technologies to deliver statistical services</li>
+          <li>Leverage Shiny and OpenCPU to build web applications</li>
         </ul>
       </div>
 
-      <div class="col-sm-7">
+      <div class="col-lg-6 col-md-6 col-sm-6">
         <div id="widget-carousel" class="carousel slide" data-ride="carousel" data-pause="">
           <!-- Indicators -->
           <ol class="carousel-indicators hide">
@@ -175,17 +111,17 @@ $(document).on("slide.bs.carousel", "#widget-carousel", function(e) {
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
             <div class="item active" data-slide="0">
-              <img class="main-screenshot" src="{{site.baseurl}}/images/ga-w600.png">
+              <img class="main-screenshot" src="{{site.baseurl}}/images/ga-w600.png" width="80%">
               <div class="carousel-caption">
               </div>
             </div>
             <div class="item" data-slide="1">
-              <img src="{{site.baseurl}}/images/apps/kriging/thumb.png">
+              <img src="{{site.baseurl}}/images/apps/kriging/thumb.png" width="80%">
               <div class="carousel-caption">
               </div>
             </div>
             <div class="item" data-slide="2">
-              <img src="{{site.baseurl}}/images/apps/qcc/thumb.png">
+              <img src="{{site.baseurl}}/images/apps/qcc/thumb.png" width="80%">
               <div class="carousel-caption">
               </div>
             </div>
@@ -216,5 +152,69 @@ $(document).on("slide.bs.carousel", "#widget-carousel", function(e) {
     </div> <!-- row -->
   </div> <!-- container-fluid main-container -->
 </div> <!-- jumbotron -->
+
+<div class="section-tout">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-6">
+        <hr/>
+        <h2>Apps</h2>
+        {% for app in site.categories.apps %}
+        <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="image">
+            <a href="{{ site.baseurl }}{{ app.url }}"><img src="{{ site.baseurl }}/images/apps/{{ app.short }}/thumb.png" class="img-responsive" alt="{{ app.short }}"></a>
+          </div>
+          <h4><a href="{{ site.baseurl }}{{ app.url }}">{{ app.title }}</a></h4>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6">
+        <hr/>
+        <h2>Posts</h2>
+        {% for post in site.categories.posts %}
+        <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+        {% endfor %}
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- <div class="jumbotron">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <h2 class="text-center">We bring the power of data science to general audiences</h2>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <img src="{{ site.baseurl }}/images/ga-w600.png" alt="Rated G" width="80%">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section-tout">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-6">
+        <h3><i class="fa fa-code"></i> The Power of R</h3>
+        <p>We use the R language to construct data analytics pipelines and insightful visualizations.</p>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6">
+        <h3><i class="fa fa-map-marker"></i> Spatial Analytics</h3>
+        <p>We rely on the latest technologies to deliver statistical services.</p>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6">
+        <h3><i class="fa fa-cogs"></i> Interactive Apps</h3>
+        <p>We use Shiny and OpenCPU to build web applications.</p>
+      </div>
+    </div>
+
+  </div>
+</div> -->
 
 
