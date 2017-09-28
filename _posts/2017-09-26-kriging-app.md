@@ -4,7 +4,7 @@ layout: default
 published: true
 category: apps
 tags: [spatial, kriging, mapping]
-id: kriging
+short: kriging
 link: "http://206.167.180.241:3838/kriging/"
 ---
 

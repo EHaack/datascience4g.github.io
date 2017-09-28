@@ -45,24 +45,20 @@ layout: plain
       <div class="col-lg-8 col-md-8 col-sm-6">
         <hr/>
         <h2>Apps</h2>
-        {% for app in site.posts %}
-        {% if app.category == 'apps' %}
+        {% for app in site.categories.apps %}
         <div class="col-lg-4 col-md-4 col-sm-6">
           <div class="image">
-            <a href="{{ site.baseurl }}{{ app.url }}"><img src="{{ site.baseurl }}/images/apps/{{ app.id }}/thumb.png" class="img-responsive" alt="{{ app.id }}"></a>
+            <a href="{{ site.baseurl }}{{ app.url }}"><img src="{{ site.baseurl }}/images/apps/{{ app.short }}/thumb.png" class="img-responsive" alt="{{ app.short }}"></a>
           </div>
           <h4><a href="{{ site.baseurl }}{{ app.url }}">{{ app.title }}</a></h4>
         </div>
-        {% endif %}
         {% endfor %}
       </div>
       <div class="col-lg-4 col-md-4 col-sm-6">
         <hr/>
         <h2>Posts</h2>
-        {% for post in site.posts %}
-        {% if post.category == 'posts' %}
+        {% for post in site.categories.posts %}
         <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
-        {% endif %}
         {% endfor %}
       </div>
     </div>
