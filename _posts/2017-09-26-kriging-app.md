@@ -1,6 +1,6 @@
 ---
 title: "An app for kriging"
-layout: default
+layout: app
 published: true
 category: apps
 tags: [spatial, kriging, mapping]
