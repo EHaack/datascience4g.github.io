@@ -48,84 +48,8 @@
     h1, h2, h3, h4, h5, h6 {
         {% if site.fancyfonts == true %}font-family: 'Asap Condensed', sans-serif;{% endif %}
     }
-
-    /* modal */
-    .bmd-modalButton {
-      display: block;
-      margin: 15px auto;
-      padding: 5px 15px;
-    }
-    .close-button {
-      overflow: hidden;
-    }
-    .bmd-modalContent {
-      box-shadow: none;
-      background-color: transparent;
-      border: 0;
-    }
-    .bmd-modalContent .close {
-      font-size: 30px;
-      line-height: 30px;
-      padding: 7px 4px 7px 13px;
-      text-shadow: none;
-      opacity: .7;
-      color:#fff;
-    }
-    .bmd-modalContent .close span {
-      display: block;
-    }
-    .bmd-modalContent .close:hover,
-    .bmd-modalContent .close:focus {
-      opacity: 1;
-      outline: none;
-    }
-    .bmd-modalContent iframe {
-      display: block;
-      margin: 0 auto;
-    }
 </style>
 <!-- IE -->
 <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico" />
 <!-- other browsers -->
 <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico" />
-<!-- modal from https://codepen.io/filippoq/pen/QwogWz/ -->
-<script>
-  (function($) {
-
-      $.fn.bmdIframe = function( options ) {
-          var self = this;
-          var settings = $.extend({
-              classBtn: '.bmd-modalButton',
-              defaultW: 640,
-              defaultH: 360
-          }, options );
-
-          $(settings.classBtn).on('click', function(e) {
-            var allowFullscreen = $(this).attr('data-bmdVideoFullscreen') || false;
-
-            var dataVideo = {
-              'src': $(this).attr('data-bmdSrc'),
-              'height': $(this).attr('data-bmdHeight') || settings.defaultH,
-              'width': $(this).attr('data-bmdWidth') || settings.defaultW
-            };
-
-            if ( allowFullscreen ) dataVideo.allowfullscreen = "";
-
-            // stampiamo i nostri dati nell'iframe
-            $(self).find("iframe").attr(dataVideo);
-          });
-
-          // se si chiude la modale resettiamo i dati dell'iframe per impedire ad un video di continuare a riprodursi anche quando la modale è chiusa
-          this.on('hidden.bs.modal', function(){
-            $(this).find('iframe').html("").attr("src", "");
-          });
-
-          return this;
-      };
-
-  })(jQuery);
-
-  jQuery(document).ready(function(){
-    jQuery("#myModal").bmdIframe();
-  });
-</script>
