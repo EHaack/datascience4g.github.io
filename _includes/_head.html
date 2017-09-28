@@ -10,7 +10,8 @@
 <style type="text/css">
     {% if site.fancyfonts == true %}/* different font family */
     @import url('https://fonts.googleapis.com/css?family=Encode+Sans+Expanded');
-    @import url('https://fonts.googleapis.com/css?family=Asap+Condensed');{% endif %}
+    /*@import url('https://fonts.googleapis.com/css?family=Asap+Condensed');*/
+    {% endif %}
     /* padding for bootstrap navbar */
     body {
         padding-top: 40px;
@@ -23,7 +24,7 @@
     }
     /* same color as inline code */
     h1, h2, h3, h4, h5, h6 {
-        {% if site.fancyfonts == true %}font-family: 'Asap Condensed', sans-serif;{% endif %}
+        {% if site.fancyfonts == true %}font-family: 'Encode Sans Expanded', sans-serif;{% endif %}
     }
     .modal-body {
         position: relative;
