@@ -6,12 +6,11 @@ layout: plain
   <div class="container">
 
     <div class="row">
-      <div class="col-lg-12">
-        <h2> </h2>
-        <center>
-          <img src="{{ site.baseurl }}/images/ga-w600.png" alt="Rated G" width="33%">
-        </center>
-        <h2 class="text-center">we bring the power of data science to general audiences</h2>
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <h2 class="text-center">We bring the power of data science to general audiences</h2>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <img src="{{ site.baseurl }}/images/ga-w600.png" alt="Rated G" width="33%">
       </div>
     </div>
 
@@ -43,14 +42,14 @@ layout: plain
   <div class="container">
 
     <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-6">
+      <div class="col-lg-8 col-md-8 col-sm-6">
         <hr/>
         <h2>Apps</h2>
         {% for app in site.categories.apps %}
         <h4><a href="{{ site.baseurl }}{{ app.url }}">{{ app.title }}</a></h4>
         {% endfor %}
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-6">
+      <div class="col-lg-4 col-md-4 col-sm-6">
         <hr/>
         <h2>Posts</h2>
         {% for post in site.categories.posts %}
