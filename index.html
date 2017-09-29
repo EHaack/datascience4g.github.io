@@ -6,15 +6,15 @@ layout: plain
   <div class="container">
     <div class="row">
 
-      <div class="col-sm-5">
+      <div class="col-md-4 col-md-offset-1">
         <div class="hidden-xs">&nbsp;</div>
         <h2 style="color:#1E8449">Bring the power of data science to general audiences</h2>
-        <h4>Use the R language for interactive visualizations</h4>
-        <h4>Build on the latest technologies to deliver statistical services</h4>
-        <h4>Leverage Shiny and OpenCPU to build web applications</h4>
+        <h3>Use the R language for interactive visualizations</h3>
+        <h3>Build on the latest technologies to deliver statistical services</h3>
+        <h3>Leverage Shiny and OpenCPU to build web applications</h3>
       </div>
 
-      <div class="col-sm-7">
+      <div class="col-sm-6">
         <div id="carousel" class="carousel slide" data-ride="carousel" data-pause="">
 
           <!-- Indicators -->
@@ -48,11 +48,10 @@ layout: plain
   <div class="container">
 
     <div class="row">
-      <div class="col-lg-8 col-md-8 col-sm-6">
-        <hr/>
+      <div class="col-md-8 col-md-offset-2">
         <h2>Apps</h2>
         {% for app in site.categories.apps %}
-        <div class="col-lg-4 col-md-4 col-sm-6">
+        <div class="col-xs-4">
           <div class="image">
             <a href="{{ site.baseurl }}{{ app.url }}"><img src="{{ site.baseurl }}/images/apps/{{ app.short }}/thumb.png" class="img-responsive" alt="{{ app.short }}"></a>
           </div>
@@ -60,7 +59,9 @@ layout: plain
         </div>
         {% endfor %}
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-6">
+    </div>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
         <hr/>
         <h2>Posts</h2>
         {% for post in site.categories.posts %}
