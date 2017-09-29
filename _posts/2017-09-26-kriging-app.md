@@ -1,5 +1,5 @@
 ---
-title: "An app for kriging"
+title: "Kriging demo"
 layout: app
 published: true
 category: apps
