@@ -6,8 +6,5 @@ category: posts
 tags: [info]
 ---
 
-This post is merely a test to see how the site will look like.
-
-## Section 1
-
-This is **bold** and this is *italic*.
+This post is merely a *test* to see how the site will look like.
+Check out the [apps]({{ site.baseurl }}/apps.html) and come back for updates.
