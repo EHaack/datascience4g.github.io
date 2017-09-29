@@ -6,7 +6,7 @@ category: apps
 tags: [spatial, kriging, mapping]
 short: kriging
 link: "http://206.167.180.241:3838/kriging/"
-summary: "This app makes kriging easy."
+summary: "Map edit feature with leaflet for interactive kriging"
 ---
 
 This app does the kriging for you!
@@ -17,5 +17,7 @@ It is as simple as one, two, three:
 3. pick a [variogram](https://en.wikipedia.org/wiki/Variogram) model, view and download the predictions in [Geo TIFF](https://en.wikipedia.org/wiki/GeoTIFF) raster format.
 
 **Note:** large (*n* > 1000) data sets are randomly sampled (*n* = 1000) to speed up calculations.
+
+<img src="{{ site.baseurl}}/images/apps/kriging/kriging.gif" class="img-responsive" alt="Kriging tutorial animation" width="100%">
 
 ![]({{ site.baseurl}}/images/apps/kriging/kriging.gif)
