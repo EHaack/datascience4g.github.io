@@ -17,7 +17,7 @@ layout: plain
         <div id="carousel" class="carousel slide" data-ride="carousel" data-pause="">
 
           <!-- Indicators -->
-          <ol class="carousel-indicators">
+          <ol class="carousel-indicators hide">
             <li data-target="#carousel" data-slide-to="0" class="active"></li>
             <li data-target="#carousel" data-slide-to="1"></li>
             <li data-target="#carousel" data-slide-to="2"></li>
@@ -50,7 +50,7 @@ layout: plain
       <div class="col-md-8 col-md-offset-2">
         <h2>Apps</h2>
         {% for app in site.categories.apps %}
-        <div class="col-xs-4">
+        <div class="col-md-4">
           <div class="image">
             <a href="{{ site.baseurl }}{{ app.url }}"><img src="{{ site.baseurl }}/images/apps/{{ app.short }}/thumb.png" alt="{{ app.short }}" width="100%"></a>
           </div>
