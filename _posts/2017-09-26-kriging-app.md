@@ -18,4 +18,6 @@ It is as simple as one, two, three:
 
 **Note:** large (*n* > 1000) data sets are randomly sampled (*n* = 1000) to speed up calculations.
 
+<center>
 <img src="{{ site.baseurl}}/images/apps/kriging/kriging.gif" class="img-responsive" alt="Kriging tutorial animation" width="80%">
+</center>
