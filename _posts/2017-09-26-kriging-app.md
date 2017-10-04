@@ -5,7 +5,7 @@ published: true
 category: apps
 tags: [spatial, kriging, mapping]
 short: kriging
-link: "http://206.167.180.241:3838/kriging/"
+link: "{{ site.shiny_url }}/kriging/"
 summary: "Map edit feature with leaflet for interactive kriging"
 ---
 
