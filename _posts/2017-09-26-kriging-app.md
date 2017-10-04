@@ -5,7 +5,7 @@ published: true
 category: apps
 tags: [spatial, kriging, mapping]
 short: kriging
-link: "{{ site.shiny_url }}/kriging/"
+link: "/kriging/"
 summary: "Map edit feature with leaflet for interactive kriging"
 ---
 
