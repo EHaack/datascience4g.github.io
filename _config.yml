@@ -34,3 +34,20 @@ categories: ["apps", "posts"]
 gems:
   - jekyll-feed
   - jekyll-sitemap
+
+team:
+  - xyz1:
+    - name: 'Name 1'
+    - pic: 'pic.jpg'
+    - link: '#'
+    - bio: 'Bio comes here.'
+  - xyz2:
+    - name: 'Name 2'
+    - pic: 'pic.jpg'
+    - link: '#'
+    - bio: 'Bio comes here.'
+  - xyz3:
+    - name: 'Name 3'
+    - pic: 'pic.jpg'
+    - link: '#'
+    - bio: 'Bio comes here.'
