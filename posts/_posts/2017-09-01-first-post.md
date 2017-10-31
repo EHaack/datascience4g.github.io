@@ -1,10 +1,9 @@
 ---
-title: "The first post for DataScience4G"
+title: "Launching DataScience4G"
 layout: default
 published: true
 category: posts
-tags: [info]
+tags: [intro]
 ---
 
-This post is merely a *test* to see how the site will look like.
-Check out the [apps]({{ site.baseurl }}/apps.html) and come back for updates.
+[We]({{ site.baseurl }}/team.html) launched the DataScience4G website where we aim to build a portfolio of [applications](({{ site.baseurl }}/apps.html)) that we have created for various clients over the past few years. Our mission is outlined on our [landing page]({{ site.baseurl }}).
