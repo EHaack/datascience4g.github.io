@@ -34,17 +34,3 @@ categories: ["apps", "posts"]
 gems:
   - jekyll-feed
   - jekyll-sitemap
-
-team:
-  - name: 'Name 1'
-    pic: 'pic.jpg'
-    link: 'http://www.some-website.net/'
-    bio: 'Bio 1 comes here.'
-  - name: 'Name 2'
-    pic: 'pic.jpg'
-    link: 'http://www.some-website.net/'
-    bio: 'Bio 2 comes here.'
-  - name: 'Name 3'
-    pic: 'pic.jpg'
-    link: 'http://www.some-website.net/'
-    bio: 'Bio 3 comes here.'

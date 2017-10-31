@@ -4,8 +4,10 @@ description: "The team"
 layout: default
 ---
 
-{% for who in site.team %}
-<h4>{{ who.name }}</h4>
+{% for who in site.data.team %}
+<h2>{{ who.name }}</h2>
 <p><a href="{{ who.link }}" target="_blank"><i class="fa fa-external-link"></i> {{ who.link }}</a></p>
-<p>{{ who.bio }}</p>
+<blockquote>
+  <p>{{ who.bio }}</p>
+</blockquote>
 {% endfor %}
