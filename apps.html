@@ -5,7 +5,7 @@ layout: default
 ---
 
 {% for app in site.categories.apps %}
-<h4><a href="{{ site.baseurl }}{{ app.url }}">{{ app.title }}</a></h4>
+<h2><a href="{{ site.baseurl }}{{ app.url }}">{{ app.title }}</a></h2>
 <small><i class="fa fa-calendar"></i> {{ app.date | date: '%B %d, %Y' }}</small>
-<p>{{ app.excerpt }}</p>
+<p>{{ app.excerpt | strip_html }}</p>
 {% endfor %}
