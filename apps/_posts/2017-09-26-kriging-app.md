@@ -6,15 +6,19 @@ category: apps
 tags: [spatial, kriging, mapping]
 short: kriging
 link: "/kriging/"
-summary: "Map edit feature with leaflet for interactive kriging"
+summary: "Map editing feature with Leaflet for interactive kriging"
 ---
 
-This app does the kriging for you!
-It is as simple as one, two, three:
+[Kriging](https://en.wikipedia.org/wiki/Kriging) is a geostatistical tool to interpolate between spatially referenced measurements. Kriging is often used in hydrogeology, mining, and remote sensing. This application helps visualizing the data and the kriging based interpolated output.
 
-1. upload your data ([CSV](https://en.wikipedia.org/wiki/Comma-separated_values) file format, [WGS 84](https://epsg.io/4326) coordinate system]) and select longitude, latitude, and value columns,
+The kriging interpolation incorporates the spatial inter-dependence of the data points by fitting a variogram model. The output is a prediction surface that can be visualized as raster heatmaps, or contours.
+
+We use the [Leaflet](http://leafletjs.com/) library for interactive mapping. You can zoom in and out, change the base map.
+The animation below show the workflow:
+
+1. upload your _data_ ([CSV](https://en.wikipedia.org/wiki/Comma-separated_values) file format, [WGS 84](https://epsg.io/4326) coordinate system) and select _longitude_, _latitude_, and _value_ columns (you can also use an example data set),
 2. interactively edit the map to subset the observations and inspect the distribution of values ([Box-Cox transformation](https://en.wikipedia.org/wiki/Power_transform#Box.E2.80.93Cox_transformation) is done when necessary),
-3. pick a [variogram](https://en.wikipedia.org/wiki/Variogram) model, view and download the predictions in [Geo TIFF](https://en.wikipedia.org/wiki/GeoTIFF) raster format.
+3. pick a [_variogram_](https://en.wikipedia.org/wiki/Variogram) model, view and download the predictions in [Geo TIFF](https://en.wikipedia.org/wiki/GeoTIFF) raster format.
 
 **Note:** large (*n* > 1000) data sets are randomly sampled (*n* = 1000) to speed up calculations.
 
