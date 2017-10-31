@@ -6,4 +6,4 @@ category: posts
 tags: [intro]
 ---
 
-[We]({{ site.baseurl }}/team.html) launched the DataScience4G website where we aim to build a portfolio of [applications](({{ site.baseurl }}/apps.html)) that we have created for various clients over the past few years. Our mission is outlined on our [landing page]({{ site.baseurl }}).
+We launched the DataScience4G website where we aim to build a portfolio of [applications]({{ site.baseurl }}/apps.html) that we have created for various clients over the past few years.

@@ -7,13 +7,13 @@ shiny_url: http://35.182.111.67:3838
 
 include: [".htaccess"]
 exclude: ["README.md","LICENSE.md"]
-timezone:    America/Edmonton
+timezone: America/Edmonton
 
 encoding: UTF-8
 markdown: kramdown
 kramdown:
-  input:          GFM
-  hard_wrap:      false
+  input: GFM
+  hard_wrap: false
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 # Bootswatch theme (cosmo)
