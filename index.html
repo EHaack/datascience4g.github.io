@@ -48,10 +48,10 @@ layout: plain
   <div class="container">
 
     <div class="row">
-      <div class="col-8 col-offset-2">
+      <div class="col-md-8 col-md-offset-2">
         <h2>Apps</h2>
         {% for app in site.categories.apps %}
-        <div class="col-4">
+        <div class="col-md-4">
           <div class="well">
             <div class="image">
               <a href="{{ site.baseurl }}{{ app.url }}"><img src="{{ site.baseurl }}/images/apps/{{ app.short }}/thumb.png" alt="{{ app.short }}" class="img-responsive" width="100%"></a>
