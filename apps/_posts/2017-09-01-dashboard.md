@@ -4,7 +4,7 @@ layout: app
 published: true
 category: apps
 tags: [dashboard, stats, training]
-short: dashboard
+short: dcapps
 link: "/dcapps/"
 summary: "Demo dashboard for statistical training"
 ---
