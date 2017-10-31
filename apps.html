@@ -8,7 +8,6 @@ layout: default
 <div class="row">
   <h2><a href="{{ site.baseurl }}{{ app.url }}">{{ app.title }}</a></h2>
   <small><i class="fa fa-calendar"></i> {{ app.date | date: '%B %d, %Y' }}</small>
-  <div class="col-md-8 col-md-offset-2">
     <div class="col-md-2">
       <div class="image">
         <a href="{{ site.baseurl }}{{ app.url }}"><img src="{{ site.baseurl }}/images/apps/{{ app.short }}/thumb.png" alt="{{ app.short }}" class="img-responsive" width="100%"></a>
@@ -17,6 +16,5 @@ layout: default
     <div class="col-md-6">
       <p>{{ app.excerpt | strip_html }}</p>
     </div>
-  </div>
 </div>
 {% endfor %}
