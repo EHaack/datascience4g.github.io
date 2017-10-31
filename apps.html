@@ -7,13 +7,13 @@ layout: default
 {% for app in site.categories.apps %}
 <div class="row">
   <h2><a href="{{ site.baseurl }}{{ app.url }}">{{ app.title }}</a></h2>
-  <small><i class="fa fa-calendar"></i> {{ app.date | date: '%B %d, %Y' }}</small>
-    <div class="col-md-2">
+  <p><small><i class="fa fa-calendar"></i> {{ app.date | date: '%B %d, %Y' }}</small></p>
+    <div class="col-md-3">
       <div class="image">
         <a href="{{ site.baseurl }}{{ app.url }}"><img src="{{ site.baseurl }}/images/apps/{{ app.short }}/thumb.png" alt="{{ app.short }}" class="img-responsive" width="100%"></a>
       </div>
     </div>
-    <div class="col-md-6">
+    <div class="col">
       <p>{{ app.excerpt | strip_html }}</p>
     </div>
 </div>
