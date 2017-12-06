@@ -3,7 +3,7 @@ description: "Data Science for General Audiences"
 
 #baseurl:  http://localhost:4000
 baseurl: http://datascience4g.github.io
-shiny_url: http://35.182.111.67:3838
+shiny_url: http://35.183.16.22:3838
 
 include: [".htaccess"]
 exclude: ["README.md","LICENSE.md"]
